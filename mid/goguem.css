@@ -1,0 +1,211 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        img {
+            display: block;
+            }
+
+        li {
+            list-style: none;
+        }
+
+#mouse-cursor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    transform: translate3d(100px, 100px, 0);
+    pointer-events: none;
+}
+#mouse-cursor>div{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    font-size: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --cursor-scale:1;
+    transform: scale3d(var(--cursor-scale), var(--cursor-scale), 1);
+    will-change: transform;
+    transition: transform 150ms ease-in-out, background-color 150ms ease-in-out;
+    
+}
+
+#mouse-cursor>div::after{
+content: attr(data-name);
+    position: absolute;
+    color: #fff;
+    transform: scale(0.45);
+    white-space: nowrap;
+}
+
+.header{
+    box-sizing: none;
+    font-family: 'Bodoni 72', serif;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+h1{
+    font-size: 20px;
+}
+.main_1{
+    width: 1920px;
+    height: 1250px;
+}
+.section{
+    width: 1920px;
+    height: 1250px;
+}
+.left{
+    width: 1000px;
+    height: 1250px;
+    padding-left: 140px;
+    box-sizing: border-box;
+    float: left;
+}
+.circle{
+    width: 1200px;
+    box-sizing: border-box;
+    float:right;
+    animation-name: rint;
+                animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+@keyframes rint{
+                from{
+                    left: 0px;
+                    transform: rotate(0deg);
+                }
+    15%{
+        left: 0px;
+    }
+                30%{
+                    left:0px;
+                }
+                45%{
+                    left:0px;
+                }
+                60%{
+                    left: 0px;
+                }
+                75%{
+                    left: 0px;
+                }
+                100%{
+                    left: 0px;
+                }
+    to{
+                    left: 0px;
+                    transform: rotate(360deg);
+                }
+            }
+.right{
+    width: 920px;
+    height: 1250px;
+    float: right;
+    box-sizing: border-box;
+    padding-top: 600px;
+  padding-left: 70px; 
+    overflow: hidden;
+}
+h2{
+    font-family: 'Bodoni 72', serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.right>p{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+.scrollbutton{
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    opacity: 40%;
+    
+}
+.scrollbutton>img{
+    float: left;
+    margin-right: 15px;
+    width: 20px;
+    
+}
+.scrollbutton>p{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+.main_2{
+    width: 1920px;
+    overflow: hidden;
+}
+.subheading{
+    width: 480px;
+    height: 600px;
+    overflow: hidden;
+    font-family: 'Bodoni 72', serif;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 700px;
+}
+.sub_1{
+    margin-top: 255px;
+    font-size: 100px;
+    float: left;
+}
+.sub_2{
+    font-size: 500px;
+    float: right;
+    opacity: 30%;
+}
+.category{
+    width: 650px;
+    height: 600px;
+    overflow: hidden;
+    display: block;
+    float: right;
+    margin-top: 100px;
+}
+
+.category li{
+    font-family: 'Bodoni 72', serif;
+    font-size: 80px;
+    display: block;
+    float: left;
+    opacity: 50%;
+}
+.category img{
+    height: 390px;
+    float: right;
+    margin-right: 40px;
+}
+.category img.line{
+    height: 10px;
+    float: left;
+    display: block;
+    transition-duration: 0.5s;
+}
+.submenu{
+    height: 0;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+.category li:hover{
+    font-size: 18px;
+    width: 1920px;
+    opacity: 100%;
+    font-size: 100px;
+}
+.category li:hover .submenu{
+    height: 500px;
+}

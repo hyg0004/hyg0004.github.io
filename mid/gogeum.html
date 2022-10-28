@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta nam e="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Keat </title>
+        <link rel="stylesheet" href="goguem.css">
+    </head>
+    
+    <body>
+        
+        <div class="header">
+        <header>
+            <center><h1>EXTREMELY<br>PERSONAL</h1></center>
+            </header>
+        </div>
+        <div class="main_1">
+            <section>
+            <div class="left">
+            <img src="img/circle.png" alt="circle" class="circle" aling="right">
+            </div>
+            <div class="right">
+                <h2>On this page,</h2>
+                <p>홍예지라는 인간이 어떤 것을 좋아하고, 어떤 생각을 하는지에 대한.<br><strong>지극히 개인적인</strong> 이야기를 해보려합니다.<br>제가 좋아하는 것을 보시고 여러분이 좋아하는 것이 무엇인지도 공유해주세요.</p>
+                <div class="scrollbutton">
+            <img src="img/scroll_arrow.png" alt="arrow">
+                <p>스크롤 해주세요.</p>
+            </div>
+            </div>
+            </section>
+        </div>
+        <div class="main_2">
+            <div class="subheading">
+                <p class="sub_1">Favorite</p>
+                <p class="sub_2">{</p>
+            </div>
+            <div class="category">
+                <ul>
+                    <li>BOOK<img src="img/line.png" class="line">
+                    <ul class="submenu">
+                    <li><img src="img/book/book_01.png"></li>
+                        <li><img src="img/book/book_02.png"></li>
+                        <li><img src="img/book/book_03.png"></li>
+                        <li><img src="img/book/book_04.png"></li>
+                        <li><img src="img/book/book_05.png"></li>
+                    </ul>
+                    </li>
+                    <li>MUSIC<img src="img/line.png" class="line">
+                        <ul class="submenu">
+                        <li><img src="img/music/music_01.png"></li>
+                            <li><img src="img/music/music_02.png"></li>
+                        <li><img src="img/music/music_03.png"></li>
+                            <li><img src="img/music/music_04.png"></li>
+                        </ul>
+                    </li>
+                    <li>MOOD<img src="img/line.png" class="line"></li>
+                    <li>FOOD<img src="img/line.png" class="line"></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="mouse-cursor">
+        <div></div>
+        </div>
+        
+        <script src="jquery.js"></script>
+        <script>
+        const cursorParent=document.getElementById('mouse-cursor')
+        const cursorChild=cursorParent.children[0]
+        window.addEventListener('mousemove', mousemove)
+            window.addEventListener('mousedown', mousedown)
+            window.addEventListener('mouseup', mouseup)
+            
+            let cursorX=0, cursorY=0
+            function mousemove(e) {
+                cursorX = e.pageX - cursorParent.offsetWidth / 2
+                cursorY = e.pageY - cursorParent.offsetHeight / 2
+                cursorParent.style.transform = 'translate3d(${cursorX}px, ${cursorY}px, 0)'
+            }
+            function mousedown(e) {}
+            function mouseup(e) {}
+            
+           
+        </script>
+    </body>
+</html>

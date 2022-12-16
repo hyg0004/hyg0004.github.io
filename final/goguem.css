@@ -322,7 +322,7 @@ h2 {
 }
 
 #book:hover #book_img {
-    height: 700px;
+    height: 400px;
 }
 
 
@@ -345,7 +345,7 @@ h2 {
 }
 
 #music:hover #music_img {
-    height: 700px;
+    height: 400px;
 }
 
 
@@ -368,7 +368,7 @@ h2 {
 }
 
 #mood:hover #mood_img {
-    height: 700px;
+    height: 400px;
 }
 
 
@@ -384,14 +384,14 @@ h2 {
     transition: 2s;
 }
 
-#food:hover #intro_4 {
+#fooㄴd:hover #intro_4 {
     height: 110px;
     overflow: hidden;
     margin-top: 10px;
 }
 
 #food:hover #food_img {
-    height: 700px;
+    height: 400px;
 }
 /*.category li:hover .submenu{
     height: 500px;

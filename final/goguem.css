@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.cursor {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    /* mix-blend-mode: difference; */
+    /* 색상 혼합 모드 */
+    background-color: white;
+
+    /* 마우스 커서로 이미지를 사용하는 경우 */
+    /* background-color: transparent;
+            background-image: url('images/cursor1.png');
+            background-size: contain;
+            background-repeat: no-repeat; */
+    pointer-events: none;
+
+
+    z-index: 1000;
+    transition: transform 0.2s;
+    /* css 애니메이션의 상태변화(transition)에 걸리는 시간 */
+
+}
+
+
+.trigger {
+    transition: all 0.2s, color 0s;
+}
+
+#object1 {
+    position: relative;
+    width: 800px;
+    top: 100px;
+    left: 100px;
+    background-color: transparent;
+    font-size: 24px;
+    line-height: 180%;
+    color: #000;
+}
+
+
+.header {
+    box-sizing: none;
+    font-family: 'Bodoni 72', serif;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 100px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+
+}
+
+/*#firstpage{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+*/
+.gradation {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to top, white, black);
+}
+
+.main_1 {
+    width: 1920px;
+    height: 1250px;
+}
+
+.section {
+    width: 1920px;
+    height: 1250px;
+}
+
+.left {
+    width: 1000px;
+    height: 1250px;
+    padding-left: 140px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.circle {
+    width: 1200px;
+    position: relative;
+    top: 60px;
+    left: -200px;
+    box-sizing: border-box;
+    float: right;
+    animation-name: rint;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rint {
+    from {
+        left: 0px;
+        transform: rotate(0deg);
+    }
+
+    15% {
+        left: 0px;
+    }
+
+    30% {
+        left: 0px;
+    }
+
+    45% {
+        left: 0px;
+    }
+
+    60% {
+        left: 0px;
+    }
+
+    75% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+
+    to {
+        left: 0px;
+        transform: rotate(360deg);
+    }
+}
+
+.right {
+    width: 920px;
+    height: 1250px;
+    float: right;
+    box-sizing: border-box;
+    padding-top: 600px;
+    padding-left: 70px;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: 'Bodoni 72', serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.right > p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.scrollbutton {
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    opacity: 40%;
+
+}
+
+.scrollbutton > img {
+    float: left;
+    margin-right: 15px;
+    width: 20px;
+
+}
+
+.scrollbutton > p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.main_2 {
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.subheading {
+    width: 480px;
+    overflow: hidden;
+    font-family: 'Bodoni 72', serif;
+    float: right;
+    box-sizing: border-box;
+    transition: 1s;
+    display: block;
+    margin-right: 55%;
+}
+
+.sub_1 {
+    margin-top: 255px;
+    font-size: 100px;
+    float: left;
+}
+
+.sub_2 {
+    font-size: 500px;
+    float: right;
+    opacity: 30%;
+}
+
+.category {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    float: right;
+    margin-top: 100px;
+    position: absolute;
+    left: 40%;
+}
+
+.category > ul > li {
+    padding-left: 150px;
+}
+
+.category li {
+    font-family: 'Bodoni 72', serif;
+    font-size: 80px;
+    display: block;
+    float: left;
+}
+.title{
+    opacity: 50%;
+    transition: 0.5s;
+}
+.title:hover{
+    opacity: 100%;
+}
+.category img {
+    height: 350px;
+    float: right;
+    margin-right: 40px;
+}
+
+.category img.line {
+    height: 10px;
+    float: left;
+    display: block;
+    transition-duration: 0.8s;
+    opacity: 50%;
+}
+
+.submenu {
+    height: 0;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.category li:hover {
+    font-size: 18px;
+    width: 1920px;
+    opacity: 100%;
+    font-size: 100px;
+}
+
+.intro {
+    font-family: 'notosans', sans-serif;
+    font-size: 12pt;
+    margin-left: 10px;
+    padding-top: 6px;
+}
+
+#intro_1 {
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 50%;
+}
+
+
+#book:hover {
+    left: 30px;
+    transition: 2s;
+}
+
+#book:hover #intro_1 {
+    height: 110px;
+    overflow: visible;
+    margin-top: 10px;
+}
+
+#book:hover #book_img {
+    height: 700px;
+}
+
+
+#intro_2 {
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 50%;
+}
+
+#music:hover {
+    left: 30px;
+    transition: 2s;
+}
+
+#music:hover #intro_2 {
+    height: 110px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#music:hover #music_img {
+    height: 700px;
+}
+
+
+#intro_3 {
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 50%;
+}
+
+#mood:hover {
+    left: 30px;
+    transition: 2s;
+}
+
+#mood:hover #intro_3 {
+    height: 110px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#mood:hover #mood_img {
+    height: 700px;
+}
+
+
+#intro_4 {
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 50%;
+}
+
+#food:hover {
+    left: 30px;
+    transition: 2s;
+}
+
+#food:hover #intro_4 {
+    height: 110px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#food:hover #food_img {
+    height: 700px;
+}
+/*.category li:hover .submenu{
+    height: 500px;
+} */
+
+footer {
+    width: 100%;
+    height: 240px;
+    background-color: #4a4a4a;
+    color: #d6d6d6;
+    font-family: 'Bodoni 72', serif;
+    font-size: 40px;
+    padding-top: 100px;
+    box-sizing: border-box;
+}

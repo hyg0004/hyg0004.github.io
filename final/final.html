@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta nam e="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Keat </title>
+    <link rel="stylesheet" href="goguem.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <header>
+            <center>
+                <h1>EXTREMELY<br>PERSONAL</h1>
+            </center>
+        </header>
+    </div>
+    <div id="firstpage"></div>
+    <div class="main_1">
+        <div class='gradation'></div>
+        <section>
+            <div class="left">
+                <img src="img/circle.png" alt="circle" class="circle" aling="right">
+            </div>
+            <div class="right">
+                <h2>On this page,</h2>
+                <p>2022년에 홍예지라는 사람이 어떤 것을 좋아하고, 어떤 생각을 하는지에 대한.<br><strong>지극히 개인적인</strong> 이야기를 해보려 합니다.<br>제가 좋아하는 것을 보시고 여러분이 좋아하는 것이 무엇인지도 공유해주세요.</p>
+                <div class="scrollbutton">
+                    <img src="img/scroll_arrow.png" alt="arrow">
+                    <p>스크롤 해주세요.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="main_2">
+        <div class="subheading">
+            <p class="sub_1">Favorite</p>
+            <p class="sub_2">{</p>
+        </div>
+        <div class="category">
+            <ul>
+                <li id="book"><p class="title">BOOK</p><img src="img/line.png" class="line">
+                    <p class="intro" id="intro_1">
+                        2022년 한해 동안 제가 읽어보았던 책들입니다.<br>어릴 때부터 좋아하던 동화, 선물 받은 에세이, 간지나 보여서 읽어본 인문학, 도움이 될 것같아 읽어본 경영 등...<br> 웬일로 다양한 책을 읽어본 한해였네요. 나름 읽어보실만한 거로만 보여드려 보려고 합니다.<br>전부 괜찮은 책들이니까 한번 읽어보세요.
+                    </p>
+                    <ul class="submenu" id="book_img">
+
+                        <li><img src="img/book/book_01.png"></li>
+                        <li><img src="img/book/book_02.png"></li>
+                        <li><img src="img/book/book_03.png"></li>
+                        <li><img src="img/book/book_04.png"></li>
+                        <li><img src="img/book/book_05.png"></li>
+                    </ul>
+                </li>
+                <li id="music"><p class="title">MUSIC</p><img src="img/line.png" class="line">
+                    <p class="intro" id="intro_2">
+                            2022년에 듣고 관심이 가게된 아티스트와 음악들을 소개해보려고합니다.<br>올해 데뷔한 아이돌부터 과제할 때 많이 찾게 된 음악, 예전부터 오래도록 들어온 음악 등이 있습니다.<br>여러분은 좋아하는 음악장르, 아티스트가 있으신가요?
+                        </p>
+                    <ul class="submenu" id="music_img">
+                        <li><img src="img/music/music_01.png"></li>
+                        <li><img src="img/music/music_02.png"></li>
+                        <li><img src="img/music/music_03.png"></li>
+                        <li><img src="img/music/music_04.png"></li>
+                    </ul>
+                </li>
+                <li id="mood"><p class="title">MOOD</p><img src="img/line.png" class="line">
+                <p class="intro" id="intro_3">
+                            2022년에 사진첩을 돌아보니 의외로 제가 많은 무드들을 좋아하는 것을 알았습니다.<br>가끔 줒대가 없다고 느껴질 때도 있지만, 어쩌겠어요.<br>차차 더 알아가겠죠.
+                        </p>
+                    <ul class="submenu" id="mood_img">
+                        <li><img src="img/mood/mood_01.JPG"></li>
+                        <li><img src="img/mood/mood_02.jpg"></li>
+                        <li><img src="img/mood/mood_03.jpg"></li>
+                        <li><img src="img/mood/mood_04.jpg"></li>
+                        <li><img src="img/mood/mood_05.jpg"></li>
+                    </ul>
+                </li>
+                <li id="food"><p class="title">FOOD</p><img src="img/line.png" class="line">
+                <p class="intro" id="intro_4">
+                            2022년부터 입맛이 달라졌던 것같아요.<br>예전에는 무조건 육류가 좋았는데, 최근에는 야채가 더 좋아졌던 것같아요.<br>입맛 바뀌자마자 물가상승 장난하냐
+                        </p>
+                    <ul class="submenu" id="food_img">
+                        <li><img src="img/food/food_01.jpg"></li>
+                        <li><img src="img/food/food_02.jpg"></li>
+                        <li><img src="img/food/food_03.jpg"></li>
+                        <li><img src="img/food/food_04.JPG"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+
+        <center>
+            <p>What other things will I like?</p>
+        </center>
+
+    </footer>
+
+
+    <div class="cursor">
+        <div></div>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery_js.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            var cursor = $('.cursor'); // 커서 오브젝트를 담기 위한 변수
+
+            // 마우스 포인터 위치에 커서 오브젝트 표시
+            $(window).on('mousemove', function(e) {
+                cursor.css({
+                    'top': e.clientY - cursor.height() / 2,
+                    'left': e.clientX - cursor.width() / 2
+                });
+            });
+
+            // 마우스 포인터가 웹브라우저 영역 바깥으로 나갈 경우 커서가 보이지 않게 함
+            $(window).on('mouseleave', function() {
+                cursor.css({
+                    'opacity': '0'
+                });
+            });
+            $(window).on('mouseenter', function() {
+                cursor.css({
+                    'opacity': '1'
+                });
+            });
+
+            // 마우스 클릭 시(눌렸을 때 down, 뗐을 때 up) 커서의 크기에 변화를 줌
+            $(window).on('mousedown', function() {
+                cursor.css({
+                    'transform': 'scale(0.3)',
+                    'opacity': '30%'
+                });
+            });
+            $(window).on('mouseup', function() {
+                cursor.css({
+                    'transform': 'scale(1.0)',
+                    'opacity': '100%'
+                });
+            });
+
+            // 마우스 포인터를 트리거 오브젝트(trigger 클래스)에 올릴 때의 효과
+            $('.trigger').on('mouseleave', function() {
+                cursor.css({
+                    'transform': 'scale(1.0)'
+                });
+                $(this).css({
+                    'color': '#000',
+                    'font-size': '24px',
+                    'font-weight': '400'
+                });
+            });
+            $('.trigger').on('mouseenter', function() {
+                cursor.css({
+                    'transform': 'scale(2.5)'
+                });
+                $(this).css({
+                    'color': '#f00',
+                    'font-size': '30px',
+                    'font-weight': '700',
+                });
+            });
+        });
+
+
+
+        //첫페이지 커서 흰색 만들기 대작전~~처참히 실패
+
+
+
+
+        //subheading 없애기
+        $('#book').on('click', function() {
+            $('.subheading').css({
+                
+            });
+        });
+        $('#music').on('click', function() {
+            $('.subheading').css({
+                'margin-right': '200%'
+            });
+        });
+        $('#mood').on('click', function() {
+            $('.subheading').css({
+                'margin-right': '200%'
+            });
+        });
+        $('#food').on('click', function() {
+            $('.subheading').css({
+                'margin-right': '200%'
+            });
+        });
+
+
+        //근데 돌아오게 할줄을 모름 
+        $('#book').on('click', function() {
+            $('.category').css({
+                'left': '100px',
+                'transition': '1s'
+            });
+        });
+
+
+        // li intro조지기
+
+
+
+        //첫페이지 스크롤 개어려움 ㄹㅇ
+
+        $(function() {
+            $(window).on('scroll', function() {
+                // 브라우저의 스크롤 상단값(scrollTop)을 변수 yPos에 저장
+                var yPos = $(window).scrollTop();
+                console.log(yPos);
+
+                if (yPos >= 100) {
+                    $('.header').stop().animate({
+                        'height': '4%',
+                        'background-color': 'transparent'
+                    }, 200);
+                    $('h1').stop().animate({
+                        'font-size': '24px'
+                    }, 200);
+                    $('h1').css('color', 'black');
+                    $('.cursor').css({
+                        'background-Color': 'black',
+                        'border': 'solid 3px #000',
+                    });
+                    $('.cursor').stop().animate({
+                        'border-radius': '100%'
+                    }, 200);
+
+                } else {
+                    $('.header').stop().animate({
+                        'height': '100%',
+                        'background-color': 'black'
+                    }, 300);
+                    $('h1').stop().animate({
+                        'font-size': '100px'
+                    }, 200);
+
+                    $('h1').css('color', '#fff');
+                    $('.cursor').css({
+                        'background-Color': 'white',
+                        'border': 'solid 3px #fff'
+                    });
+                    $('.cursor').stop().animate({
+                        'border-radius': '100%'
+                    }, 200);
+
+                    /*$('.cursor').on().css({
+                        'background-color':'black'
+                    });*/
+                }
+
+            });
+        });
+
+        //첫페이지를 스크롤해도 뒷페이지는 가만 있도록 만들기
+
+        /*$(function(){
+            $(window).on('scroll',function(){
+                var ypos=$(window).scrollTop();
+                
+                if(ypos>=300){
+                    $('body')
+                    });
+                }
+                
+                
+            });
+        });
+        
+        document.getElementById(body).scrollIntoView({
+   behavior: 'smooth',
+ });*/
+    </script>
+</body></html>

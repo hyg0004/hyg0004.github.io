@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Keat </title>
+        <link rel="stylesheet" type="text/css" href="middle_test.css"/> 
+       <style>
+   *{
+margin: 0;
+padding: 0;
+}
+@font-face {
+font-family: 'NEXON Lv1 Gothic OTF';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@import url('http://fonts.cdnfonts.com/css/vogue');
+
+@font-face {font-family: "Lemon/Milk"; src: url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.eot"); src: url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.woff") format("woff"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.svg#Lemon/Milk") format("svg"); }
+
+@font-face{
+font-family:"lemon-milk-regular";
+src:url("https://fontsme.com/wp-data/l/150/20150/file/LemonMilkRegular-X3XE2.otf") format("woff"),
+url("https://fontsme.com/wp-data/l/150/20150/file/LemonMilkRegular-X3XE2.otf") format("opentype"),
+url("https://fontsme.com/wp-data/l/150/20150/file/LemonMilkRegular-X3XE2.otf") format("truetype");
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+li{
+list-style: none;
+}
+img{
+display: block;
+border: none;
+}
+body{
+font-size: 16px;
+font-family: 'NEXON Lv1 Gothic OTF';
+background-color: #25150f;
+}
+
+
+#main_img{
+width: 100%;
+height: 728px;
+background-image: url(img_school/main_img.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:  center;
+position: relative;
+box-shadow: 0px 3px 1000px
+}
+header{
+width : 100%;
+height: 88px;
+overflow: hidden;
+}
+header nav{
+width: 1320px;
+height: 88px;
+margin: 0 auto;
+}
+header h1{
+margin-left: 20px;
+line-height: 88px;
+float: left;
+opacity: 80%;
+}
+header h1 img{
+margin-top: 31.7px;
+width: 174px;
+}
+header nav ul{
+overflow: hidden;
+float: right;
+margin-right: 20px;
+}
+header nav li{
+float: left;
+line-height: 88px;
+margin-left: 22.5px;
+margin-right: 22.5px;
+}
+header nav li img{
+width: 20px;
+display: inline;
+line-height: 88px;
+margin-left: -10px;
+margin-right: -10px;
+margin-top: 15px;
+}
+header nav li a{
+color: white;
+}
+header nav li:hover a{
+font-weight: 900;
+color: #c4ee33;
+}
+#coment1{
+width: 1320px;
+height: 212px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+text-align: center;
+margin-top: 186.5px;
+}
+#coment1 h3{
+font-family: "Vogue";
+color: white;
+font-size: 60px;
+}
+#coment1 p{
+text-align: center;
+color: white;
+opacity: 60%;
+margin-top: 20px;
+}
+#coment1 p{
+font-size: 18px;
+}
+#coment1 p:nth-of-type(2){
+font-size: 14px;
+opacity: 50%;
+}
+
+#bestseller{
+width: 1320px;
+height: 822px;
+background-color: #fffff0;
+margin: 0 auto;
+position: absolute;
+overflow: hidden;
+bottom: -105%;
+left: 50%;
+transform: translateX(-50%);
+padding-top: 70px;
+box-sizing: border-box;
+box-shadow: 5px 5px 15px  #25150f;
+}
+#bestseller >p{
+text-align: center;
+font-size: 20px;
+margin-bottom: 45px;
+color: #779413;
+opacity: 80%;
+}
+#bestseller .best_logo{
+text-align: center;
+width: 250px;
+margin: 0 auto;
+margin-bottom: 50px;
+}
+.b_box1{
+width: 40px;
+height: 5px;
+background-color: #c4ee33;
+margin: 0 auto;
+margin-bottom: 50px;
+}
+#bestseller #b_box2{
+width: 842px;
+height: 302px;
+margin: 0 auto;
+}
+#bestseller .best{
+height: 302px;
+float : left;
+margin-bottom: 25px;
+box-shadow: 3px 3px 7px #25150f ;
+}
+#bestseller #middle_best{
+margin-left: 114px;
+margin-right: 112px;
+}
+#bestseller .best_p{
+float: left;
+} 
+#bestseller #b_box3{
+width: 842px;
+height: 88px;
+margin: 0 auto;
+}
+#bestseller #b_box3 li{
+float: left;
+width: 205px;
+font-size: 22px;
+font-weight: 900;
+margin-right: 113px;
+}
+#bestseller #b_box3 li:last-of-type{
+margin: 0;
+
+}
+#b_box3 li #dallergute{
+font-size: 24.9px;
+}
+#b_box3 li strong{
+font-size: 26px;
+}
+#bestseller #b_box3 li .name1{
+font-size: 18px;
+line-height: 35px;
+opacity: 60%;
+color:  #779413;
+}
+
+#recommend{
+width: 100%;
+height: 677px;
+overflow: hidden;
+margin-top: 712px;
+padding-top: 110px;
+box-sizing: border-box;
+background-color: #fffff0;
+}
+#genre1{
+width: 1320px;
+overflow: hidden;
+margin: 0 auto;
+}
+#genre1 ul{
+width: 1000px;
+height: 36px;
+}
+#genre1 ul li{
+float: left;
+border: 2.6px solid navy;
+padding-top: 7px;
+padding-bottom: 7px;
+padding-left: 12px;
+padding-right: 12px;
+border-radius: 24px;
+margin-right: 20px;
+}
+#genre1 ul li a{
+font-size: 18px;
+color: navy;
+font-weight: 900;
+}
+#genre1 ul li:hover a{
+color: #c4ee33;
+font-weight: 900;
+border-color: #c4ee33;
+}
+#genre1 ul li:hover {
+border :3px solid #c4ee33;
+}
+#genre1 >p{
+margin-top: 55px;
+font-size: 22px;
+color: navy;
+margin-bottom: 55px;
+margin-left: 20px;
+opacity: 60%;
+}
+#genre2{
+width: 1320px;
+height: 230px;
+margin: 0 auto;
+}
+.next1{
+width: 50px;
+float: left;
+margin-top: 122.5px;
+opacity: 60%;
+}
+.next2{
+width: 50px;
+float: right;
+margin-top: 122.5px;
+opacity: 60%;
+}
+.economy_ul{
+width: 1002px;
+margin: 0 auto;
+}
+#genre2 .economy{
+height: 230px;
+float: left;
+margin-bottom: 25px;
+box-shadow: 2px 2px 3px #25150f;
+}
+#genre2 .economy_li{
+height: 255px;
+float: left;
+margin-right: 40px;
+}
+#genre2 li:last-of-type{
+margin-right: 0;
+}
+#genre2 li a{
+font-weight: 900;
+font-size: 15px;
+}
+#genre2 li .name2{
+font-size: 14px;
+opacity: 60%;
+line-height: 25px;
+color: #779413;
+}
+#genre2 li strong{
+font-size: 16.5px;
+}
+
+#booktip {
+width: 100%;
+overflow: hidden;
+box-sizing: border-box;
+padding-top: 55px;
+position: relative;
+}
+#booktip img{
+margin: 0 auto;
+margin-bottom: 55px;
+}
+.tip_box{
+width: 890px;
+height: 494px;
+margin: 0 auto;
+margin-bottom: 55px;
+box-shadow: 5px 5px 10px black; 
+}
+#booktip iframe{
+width: 890px;
+height: 494px;
+}
+footer{
+width: 100%;
+height: 140px;
+text-align: center;
+padding-top: 40px;
+color: lightgray;
+line-height: 25px;
+background-color: #5c6639;
+}
+footer p{
+opacity: 60%
+}
+
+       </style>
+    </head>
+    
+    <body>
+        <div id="main_img">
+            <header>
+            <nav>
+            <h1><img src ="img_school/logo.png"></h1>
+                <ul>
+                <li><a href="#">HOME</a></li>
+                    <li><a href="#">베스트셀러</a></li>
+                    <li><a href="#">국내도서</a></li>
+                    <li><a href="#">외국도서</a></li>
+                    <li><a href="#">eBook</a></li>
+                    <li><a href="#">음반</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#"><img src=img_school/search.png></a></li>
+                    <li><a href="#">로그인</a></li>
+                </ul>
+            </nav>
+                <div id="coment1">
+            <h3>"YOU CAN COVER A GREAT DEAL<br>OF COUNTRY IN BOOKS."</h3>
+                <p>책으로 한 나라의 상당 부분을 다닐 수 있다.</p>
+                <p>- Andrew Lang(앤드류 랭) -</p>
+            </div>
+            </header>
+             <div id="bestseller">
+            <p>Which book is the bestseller this time?</p>
+                <img class="best_logo" src="img_school/bestseller.png">
+              <div class="b_box1"></div>
+                <div id="b_box2">
+                    <ul>
+                        <li><a href="#">
+                            <img class="best" src="img_school/b_1.png"></a>
+                        </li>
+                        <li><a href="#">
+                            <img class="best" 
+                                 id="middle_best" src="img_school/b_2.png"></a>
+                        </li>
+                        <li><a href="#">
+                            <img class="best"
+                                 src="img_school/b_3.png"></a>
+                        </li>
+                    </ul>
+                 </div>
+                    <ul id="b_box3">
+                    <li><a href="#"><strong>질서 너머</strong><br><span class="name1">조던 피터슨</span><br>17,800원</a>
+                        </li>
+                        <li><a href="#"><strong>주술회전</strong><br><span class="name1">Gege Akutami</span><br>4,500원</a>
+                        </li>
+                        <li><a href="#"><strong id="dallergute">달러구트 꿈 백화점</strong><br><span class="name1">이미예</span><br>13,800원</a></li>
+                    </ul>
+            </div>
+            </div>
+         
+        <div id="recommend">
+        <div id="genre1">
+            <ul>
+            <li><a href="#"># 경제 경영</a></li>
+                <li><a href="#"># 자기 계발</a></li>
+                <li><a href="#"># 소설/시</a></li>
+                <li><a href="#"># 에세이</a></li>
+                <li><a href="#"># 예술/종교</a></li>
+                <li><a href="#"># 만화</a></li>
+            </ul>
+            <p>이제부터 시작하는 경제 경영. 어떻게 시작해야할까?</p>
+            </div>
+            <div id="genre2">
+                <img class="next1" src="img_school/next_l.png"
+                     href="#">
+            <ul class="economy_ul">
+                <li class="economy_li"><a href="#">
+                    <img class="economy" src="img_school/gj_1.png">
+                    <div class="gj_box1"><p><strong>장하준의 경제학강의</strong><br><span class="name2">장하준</span><br>16,800원</p></div>
+                    </a></li>
+                <li class="economy_li"><a href="#">
+                    <img class="economy" src="img_school/gj_2.png">
+                    <div class="gj_box1"><p><strong>경제학:무작정 따라하기</strong><br><span class="name2">김정수</span><br>17,500원</p></div>
+                    </a></li>
+                <li class="economy_li"><a href="#">
+                    <img class="economy" src="img_school/gj_3.png">
+                    <div class="gj_box1"><p><strong>스타팅 경제학</strong><br><span class="name2">
+                    테이번 페팅거</span><br>17,500원</p></div>
+                    </a></li>
+                <li class="economy_li"><a href="#">
+                    <img class="economy" src="img_school/gj_4.png">
+                    <div class="gj_box1"><p><strong>1cm 경제학</strong><br><span class="name2">연합합인포...</span><br>15000원</p></div>
+                    </a></li>
+                <li class="economy_li"><a href="#">
+                    <img class="economy" src="img_school/gj_5.png">
+                    <div class="gj_box1"><p><strong>경제학은 배워서...</strong><br><span class="name2">진선여고...</span><br>13000원</p></div>
+                    </a></li>
+                </ul>
+                <img class="next2" src="img_school/next_r.png" herf="#">
+            </div>
+        </div>
+        <div id="booktip">
+        <img src="img_school/booktip.png">
+        <div class="b_box1"></div>
+            <div class="tip_box">
+            <iframe src="https://www.youtube.com/embed/quH_Sc9NoRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <footer>
+        <p>홍예지<br>TEL)01024286536<br>경상북도 경주시 현곡면 금장5길 34 신한토탈아파트109호 704호<br>책 이미지 출처 : 교보문고 사이트
+        </p>
+
+        </footer>
+    </body>
+</html>
